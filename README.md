@@ -8,10 +8,9 @@
 
 
 <p align="center">
-	<img src="https://github.com/vhakulinen/gnvim/wiki/completionmenu.png" alt="Logo">
+	<img src="usercontent.com/daaniiieel/danivim/master/.github/screenshot.png" alt="screenshot">
 </p>
 
-For more screenshots, see [the wiki](https://github.com/vhakulinen/gnvim/wiki).
 
 TL;DR to get started on Ubuntu 18.04 after cloning this repo and assuming
 you have [rust tool chain](https://rustup.rs/) installed:
