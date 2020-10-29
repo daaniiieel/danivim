@@ -92,7 +92,7 @@ impl Window {
 
         let widget = grid.widget();
         frame.add(&widget);
-
+        
         if let Some(css_provider) = css_provider {
             add_css_provider!(&css_provider, frame);
         }

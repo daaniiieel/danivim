@@ -17,19 +17,23 @@ syntect-pack:
 	cargo run --example build-syntect-pack
 
 install:
-	install -d "$(DESTDIR)$(PREFIX)/bin"
-	install -t "$(DESTDIR)$(PREFIX)/bin" ./target/release/danivim
-	install -d "$(DESTDIR)$(PREFIX)/share/danivim"
-	cp -r ./runtime "$(DESTDIR)$(PREFIX)/share/danivim"
-	install -d "$(DESTDIR)$(PREFIX)/share/applications"
-	sed -e "s|Exec=danivim|Exec=$(PREFIX)/bin/gnvim|" \
-	    "./desktop/danivim.desktop" \
-	    >"$(DESTDIR)$(PREFIX)/share/applications/danivim.desktop"
-	install -d "$(DESTDIR)$(PREFIX)/share/icons/hicolor/48x48/apps"
-	install -d "$(DESTDIR)$(PREFIX)/share/icons/hicolor/128x128/apps"
-	cp ./desktop/danivim_128.png "$(DESTDIR)$(PREFIX)/share/icons/hicolor/128x128/apps/gnvim.png"
-	cp ./desktop/danivim_48.png "$(DESTDIR)$(PREFIX)/share/icons/hicolor/48x48/apps/gnvim.png"
+	sudo install -d "$(DESTDIR)$(PREFIX)/bin"
+	sudo install -t "$(DESTDIR)$(PREFIX)/bin" ./target/release/danivim
+	sudo install -d "$(DESTDIR)$(PREFIX)/share/danivim"
+	sudo cp -r ./runtime "$(DESTDIR)$(PREFIX)/share/danivim"
+	sudo install -d "$(DESTDIR)$(PREFIX)/share/applications"
+	sudo sh -c 'sed -e "s|Exec=danivim|Exec=$(PREFIX)/bin/danivim|" "./desktop/danivim.desktop" > "$(DESTDIR)$(PREFIX)/share/applications/danivim.desktop"'
+	
+	sudo install -d "$(DESTDIR)$(PREFIX)/share/icons/hicolor/48x48/apps"
+	sudo install -d "$(DESTDIR)$(PREFIX)/share/icons/hicolor/128x128/apps"
+	sudo cp ./desktop/danivim_128.png "$(DESTDIR)$(PREFIX)/share/icons/hicolor/128x128/apps/gnvim.png"
+	sudo cp ./desktop/danivim_48.png "$(DESTDIR)$(PREFIX)/share/icons/hicolor/48x48/apps/gnvim.png"
+	echo -e "backing up old nvimrc to ~/.nvimrcold"
+	cp ~/.config/nvim/init.vim ~/.nvimrcold
+	cp ./desktop/init.vim ~/.config/nvim/init.vim
 
 uninstall:
-	rm "$(DESTDIR)$(PREFIX)/bin/danivim"
-	rm -rf "$(DESTDIR)$(PREFIX)/share/danivim"
+	sudo rm "$(DESTDIR)$(PREFIX)/bin/danivim"
+	sudo rm -rf "$(DESTDIR)$(PREFIX)/share/danivim"
+	echo -e "uninstalling nvim config, replacing with old one"
+	cp ~/.nvimrcold ~/.config/nvim/init.vim
