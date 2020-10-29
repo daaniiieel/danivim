@@ -6,7 +6,7 @@
 <rect x="161" y="349.154" width="198.437" height="26.2087" transform="rotate(-34.213 161 349.154)" fill="#EDAE49"/>
 </svg>
 
-<h3 align="center">Danivim - the only sane editor</h3>
+<h3 align="center">danivim - the only sane editor</h3>
 </p>
 
 
