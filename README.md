@@ -1,16 +1,14 @@
 <p align="center">
-	<img src="./desktop/gnvim_128.png" alt="GNvim Logo">
-    <h3 align="center">GNvim - Rich Neovim GUI without any web bloat</h3>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="500" height="500" rx="250" fill="#2B303B"/>
+<rect x="171.232" y="129" width="26.2087" height="241.495" fill="#0A8754"/>
+<rect x="183" y="129" width="198.437" height="26.2087" transform="rotate(39.3349 183 129)" fill="#00A6ED"/>
+<rect x="161" y="349.154" width="198.437" height="26.2087" transform="rotate(-34.213 161 349.154)" fill="#EDAE49"/>
+</svg>
+
+<h3 align="center">Danivim - the only sane editor</h3>
 </p>
 
-[![Build Status](https://travis-ci.org/vhakulinen/gnvim.svg?branch=master)](https://travis-ci.org/vhakulinen/gnvim)
-[![Gitter](https://badges.gitter.im/gnvim/community.svg)](https://gitter.im/gnvim/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-GNvim, Neovim GUI aiming for rich code editing experience without any
-unnecessary web bloat.
-
-GNvim has been my daily driver since August 2018. I try to add new features as
-I find time for it, and any help is welcome!
 
 <p align="center">
 	<img src="https://github.com/vhakulinen/gnvim/wiki/completionmenu.png" alt="Logo">
