@@ -51,10 +51,10 @@ fn parse_geometry(input: &str) -> Result<(i32, i32), String> {
     }
 }
 
-/// Gnvim is a graphical UI for neovim.
+/// danivim is a graphical UI for neovim.
 #[derive(StructOpt, Debug)]
 #[structopt(
-    name = "gnvim",
+    name = "danivim",
     version = VERSION,
     author = "Ville Hakulinen"
 )]
@@ -221,11 +221,11 @@ fn main() {
     let mut flags = gio::ApplicationFlags::empty();
     flags.insert(gio::ApplicationFlags::NON_UNIQUE);
     flags.insert(gio::ApplicationFlags::HANDLES_OPEN);
-    let app = gtk::Application::new(Some("com.github.vhakulinen.gnvim"), flags)
+    let app = gtk::Application::new(Some("com.github.daaniiieel.danivim"), flags)
         .unwrap();
 
-    gdk::set_program_class("GNvim");
-    glib::set_application_name("GNvim");
+    gdk::set_program_class("Danivim");
+    glib::set_application_name("Danivim");
     gtk::Window::set_default_icon_name("gnvim");
 
     if opts.prefer_dark_theme {

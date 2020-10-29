@@ -1,5 +1,5 @@
 [package]
-name = "gnvim"
+name = "danivim"
 version = "0.1.0"
 authors = ["Ville Hakulinen <ville.hakulinen@gmail.com>"]
 edition = "2018"
