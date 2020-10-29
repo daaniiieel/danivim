@@ -8,9 +8,13 @@
 
 
 <p align="center">
-	<img src="usercontent.com/daaniiieel/danivim/master/.github/screenshot.png" alt="screenshot">
+	<img src="https://raw.githubusercontent.com/daaniiieel/danivim/master/.github/screenshot.png" alt="screenshot">
 </p>
 
+All editors suck (and that's a fact). This is one that sucks a bit less.
+You don't want to use vscode. It's slow, and if you have less than 16 GBs of RAM your pc is basically dead.
+You don't want to use vim/nvim. You don't want to spend literal hours configuring vi and then all of it breaks when you open a file larger than 3000 lines.
+> **NOTICE: This is still very much Work In Progress.**
 
 TL;DR to get started on Ubuntu 18.04 after cloning this repo and assuming
 you have [rust tool chain](https://rustup.rs/) installed:
