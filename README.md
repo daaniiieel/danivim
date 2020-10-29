@@ -24,7 +24,7 @@ $ sudo apt install libgtk-3-dev libwebkit2gtk-4.0-dev
 $ # Run (unoptimized version) without installing
 $ GNVIM_RUNTIME_PATH=/path/to/gnvim/runtime cargo run
 $ # Install
-$ make && sudo make install
+$ make && make install
 ```
 
 ## macOS (without webkit2gtk)
