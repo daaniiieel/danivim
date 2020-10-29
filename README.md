@@ -8,7 +8,7 @@
 
 
 <p align="center">
-	<img src="usercontent.com/daaniiieel/danivim/master/.github/screenshot.png" alt="screenshot">
+	<img src="https://raw.githubusercontent.com/daaniiieel/danivim/master/.github/screenshot.png" alt="screenshot">
 </p>
 
 
